@@ -1,0 +1,161 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cores padrão */
+:root {
+  --rosa-claro: #f8e1e7;
+  --rosa-hover: #f2cbd6;
+  --dourado: #d4af37;
+  --dourado-escuro: #b89d2f;
+  --cinza-texto: #444;
+  --branco: #fff;
+  --fundo: #fff5f8;
+}
+
+/* Layout geral */
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--fundo);
+  color: var(--cinza-texto);
+  line-height: 1.6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--rosa-claro);
+  padding: 20px 0 10px;
+  border-bottom: 2px solid var(--dourado);
+  text-align: center;
+}
+
+header h1 {
+  color: var(--dourado);
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--dourado);
+  background-color: var(--rosa-hover);
+  padding: 8px 15px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: var(--dourado);
+  color: var(--branco);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+}
+
+/* Seção Banner e Texto Lado a Lado */
+.banner-apresentacao {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.texto-apresentacao {
+  flex: 1 1 400px;
+}
+
+.texto-apresentacao h2 {
+  color: var(--dourado-escuro);
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.texto-apresentacao p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.imagem-banner {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem-banner img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--rosa-claro);
+  color: var(--cinza-texto);
+  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid var(--dourado);
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .banner-apresentacao {
+    flex-direction: column;
+  }
+
+  .imagem-banner img {
+    max-height: 250px;
+  }
+
+  .texto-apresentacao h2 {
+    font-size: 1.6rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+
+
+
