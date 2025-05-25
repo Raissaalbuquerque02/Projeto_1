@@ -7,10 +7,10 @@
 
 /* Cores padrão */
 :root {
-  --rosa-claro: #f8e1e7;
+  --rosa-claro: #ee98af;
   --rosa-hover: #f2cbd6;
-  --dourado: #d4af37;
-  --dourado-escuro: #b89d2f;
+  --dourado: #ab8b23;
+  --dourado-escuro: #ab8b23;
   --cinza-texto: #444;
   --branco: #fff;
   --fundo: #fff5f8;
@@ -95,6 +95,7 @@ header h1 {
 
 .texto-apresentacao {
   flex: 1 1 400px;
+  text-align: justify;
 }
 
 .texto-apresentacao h2 {
