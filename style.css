@@ -213,3 +213,8 @@ footer {
   line-height: 1.4;
   text-align: justify;
 }
+
+a{
+  text-decoration: none;
+  color: #000;
+}
