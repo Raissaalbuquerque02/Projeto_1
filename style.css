@@ -82,6 +82,10 @@ header h1 {
   box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
 }
 
+main p{
+  text-align: justify;
+}
+
 /* Seção Banner e Texto Lado a Lado */
 .banner-apresentacao {
   display: flex;
